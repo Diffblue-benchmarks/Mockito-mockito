@@ -1,4 +1,4 @@
-buildCmd: ./gradlew build
+buildCmd: ./gradlew assemble
 testCmd: true
 skipVerification: true
 cbmcArguments:
@@ -173,39 +173,3 @@ phases:
       cover-function-only: false
       # instrument the file as opposed to the function only
       cover-only: file
-units:
- - target:
-   - dir: build/classes/java/main
-     file: org/mockito/internal/creation/bytebuddy/MockMethodInterceptor$ForEquals.class
-     sourceDir: src/main/java
-     sourceFile: org/mockito/internal/creation/bytebuddy/MockMethodInterceptor.java
- - target:
-   - dir: build/classes/java/main
-     file: org/mockito/internal/util/Platform.class
-     sourceDir: src/main/java
-     sourceFile: org/mockito/internal/util/Platform.java
-   - dir: build/classes/java/main
-     file: org/mockito/internal/util/StringUtil.class
-     sourceDir: src/main/java
-     sourceFile: org/mockito/internal/util/StringUtil.java
- - target:
-   - dir: build/classes/java/main
-     file: org/mockito/internal/junit/ExceptionFactory.class
-     sourceDir: src/main/java
-     sourceFile: org/mockito/internal/junit/ExceptionFactory.java
-   - dir: build/classes/java/main
-     file: org/mockito/internal/junit/ExceptionFactory$ExceptionFactoryImpl.class
-     sourceDir: src/main/java
-     sourceFile: org/mockito/internal/junit/ExceptionFactory.java
-   - dir: build/classes/java/main
-     file: org/mockito/internal/junit/ExceptionFactory$1.class
-     sourceDir: src/main/java
-     sourceFile: org/mockito/internal/junit/ExceptionFactory.java
-   - dir: build/classes/java/main
-     file: org/mockito/internal/junit/ExceptionFactory$3.class
-     sourceDir: src/main/java
-     sourceFile: org/mockito/internal/junit/ExceptionFactory.java
-   - dir: build/classes/java/main
-     file: org/mockito/internal/junit/ExceptionFactory$2.class
-     sourceDir: src/main/java
-     sourceFile: org/mockito/internal/junit/ExceptionFactory.java
